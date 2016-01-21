@@ -16,7 +16,14 @@
 	</head>
 	<body>
 		<script>
-			document.body.appendChild( renderer.domElement );
+			(function(){
+				document.body.appendChild( renderer.domElement );
+				world = new world();
+				addBody(35);
+				player = addPlayer(10);
+				player.name = "player";
+				render();
+			})();
 		</script>
 	</body>
 </html>
