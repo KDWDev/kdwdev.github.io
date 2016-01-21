@@ -7,15 +7,16 @@
 			body { margin: 0; }
 
 		</style>
-		<script src="https://rawgit.com/KDWDev/JSGame/master/js/matter-shim.js"></script>
-		<script src="https://rawgit.com/KDWDev/JSGame/master/js/three.min.js"></script>
-		<script src="https://rawgit.com/KDWDev/JSGame/master/js/render-shim.js"></script>
-		<script src="https://rawgit.com/KDWDev/JSGame/master/js/game.js"></script>
+		<script src="https://rawgit.com/KDWDev/Physics.js/master/js/jquery-2.2.0.min.js"></script>
+		<script src="https://rawgit.com/KDWDev/Physics.js/master/js/Physics.js"></script>
+		<script src="https://rawgit.com/KDWDev/Physics.js/master/js/three.min.js"></script>
+		<script src="https://rawgit.com/KDWDev/Physics.js/master/js/KeyboardState.js"></script>
+		<script src="https://rawgit.com/KDWDev/Physics.js/master/js/main.js"></script>
+
 	</head>
 	<body>
 		<script>
-			g = new game();
-			g.init();
+			document.body.appendChild( renderer.domElement );
 		</script>
 	</body>
 </html>
