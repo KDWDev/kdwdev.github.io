@@ -7,23 +7,15 @@
 			body { margin: 0; }
 
 		</style>
-		<script src="https://raw.githubusercontent.com/KDWDev/Physics.js/master/js/jquery-2.2.0.min.js"></script>
-		<script src="https://raw.githubusercontent.com/KDWDev/Physics.js/master/js/Physics.js"></script>
-		<script src="https://raw.githubusercontent.com/KDWDev/Physics.js/master/js/three.min.js"></script>
-		<script src="https://raw.githubusercontent.com/KDWDev/Physics.js/master/js/KeyboardState.js"></script>
-		<script src="https://raw.githubusercontent.com/KDWDev/Physics.js/master/js/main.js"></script>
-
+		<script src="https://raw.githubusercontent.com/KDWDev/JSGame/master/js/matter-shim.js"></script>
+		<script src="https://raw.githubusercontent.com/KDWDev/JSGame/master/js/three.min.js"></script>
+		<script src="https://raw.githubusercontent.com/KDWDev/JSGame/master/js/render-shim.js"></script>
+		<script src="https://raw.githubusercontent.com/KDWDev/JSGame/master/js/game.js"></script>
 	</head>
 	<body>
 		<script>
-			(function(){
-				document.body.appendChild( renderer.domElement );
-				world = new world();
-				addBody(35);
-				player = addPlayer(10);
-				player.name = "player";
-				render();
-			})();
+			g = new game();
+			g.init();
 		</script>
 	</body>
 </html>
